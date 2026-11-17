@@ -6,7 +6,13 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Ollama](https://img.shields.io/badge/Local_Inference-qwen2.5--coder:3b-000000?style=for-the-badge)](https://ollama.com/)
 [![Streamlit](https://img.shields.io/badge/Dashboard-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Governance](https://img.shields.io/badge/Security-AST_SQL_Guardrails-10B981?style=for-the-badge)](#3-deterministic-sql-guardrails--hitl)
+[![Award](https://img.shields.io/badge/Award-Most_Innovative-FFD700?style=for-the-badge&logo=trophy&logoColor=black)]()
+
+<div align="center">
+
+🏆 **Awarded "Most Innovative Project"** at the Enterprise Data Analytics Hackathon 
+
+</div>
 
 > **Synopsis:** *DataNexis is an AI-powered enterprise data platform that unifies fragmented data into a governed data fabric, adds business context through an automated semantic layer, and enables users to query data in natural language to get instant insights and visual dashboards.*
 
