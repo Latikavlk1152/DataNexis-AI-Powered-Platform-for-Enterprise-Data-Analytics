@@ -1,0 +1,31 @@
+# Core Database & Data Engineering
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.30
+pgvector>=0.3.0
+dbt-core>=1.8.0
+dbt-postgres>=1.8.0
+dagster>=1.8.0
+dagster-webserver>=1.8.0
+
+# Data Science & Statistical Analytics
+pandas>=2.2.2
+numpy>=1.26.4
+scipy>=1.13.0
+scikit-learn>=1.5.0
+
+# Local LLM & RAG Agentic Layer
+ollama>=0.3.0
+vanna>=0.7.0
+langgraph>=0.2.0
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+
+# Presentation & Visualization
+streamlit>=1.38.0
+streamlit-echarts>=0.4.0
+
+# Utilities & Testing
+python-dotenv>=1.0.1
+loguru>=0.7.2
+pytest>=8.3.0
+ruff>=0.6.0

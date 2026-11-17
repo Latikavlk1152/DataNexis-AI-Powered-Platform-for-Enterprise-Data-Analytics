@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Environment & Secrets
+.env
+.env.local
+
+# dbt artifacts
+dbt_semantic_layer/target/
+dbt_semantic_layer/dbt_packages/
+dbt_semantic_layer/logs/
+
+# Dagster local storage
+.dagster/
+dagster_home/
+
+# Data files (keep raw/seed directories clean)
+data/raw/*.csv
+data/raw/*.parquet
+!data/raw/.gitkeep
+!data/seed/.gitkeep
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.pytest_cache/
+.ruff_cache/

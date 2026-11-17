@@ -1,0 +1,25 @@
+name: 'semantic_data_fabric'
+version: '1.0.0'
+config-version: 2
+
+profile: 'semantic_fabric_profile'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  semantic_data_fabric:
+    staging:
+      +schema: silver
+      +materialized: view
+    marts:
+      +schema: gold
+      +materialized: table

@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Master enterprise customer dimension governed under GDPR PII classification."
+    columns:
+      - name: cust_id
+        description: "Primary surrogate key for enterprise accounts."
+        tests: [unique, not_null]
+      - name: contact_email
+        description: "Primary procurement contact email (Classified: PII)."
+      - name: cust_tier_cd
+        description: "Account segmentation tier: ENT (Enterprise), MID (Mid-Market), SMB."
+
+  - name: fact_orders
+    description: "Core B2B revenue fact table capturing net order value and fulfillment status."
+    columns:
+      - name: ord_id
+        description: "Unique B2B purchase order identifier."
+        tests: [unique, not_null]
+      - name: net_amt_usd
+        description: "Semantic Metric: Net Order Revenue in USD after contractual discounts."
+
+  - name: fact_shipments
+    description: "Logistics execution fact tracking carrier transit times against regional SLAs."
+    columns:
+      - name: sla_breach_flg
+        description: "Boolean indicator triggered when transit_hrs exceeds sla_target_hrs."
